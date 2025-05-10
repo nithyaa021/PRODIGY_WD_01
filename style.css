@@ -1,0 +1,243 @@
+/* General Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: ;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #fff8f4;
+  color: #4a4a4a;
+}
+
+/* Header & Navbar */
+header {
+  background-color: #fff;
+  padding: 20px 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+/* Base Navbar Styles */
+#navbar {
+  background-color: #efc3cb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#navbar .logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #d96c8b;
+  font-family: 'Playfair Display', serif;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+#navbar a:hover {
+  color: rgb(170, 66, 121);
+}
+
+/* Scrolled navbar style */
+#navbar.scrolled {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Scrolled navigation links */
+#navbar.scrolled a {
+  color: #4a4a4a;
+}
+
+#navbar.scrolled a:hover {
+  color: #d96c8b;
+}
+
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #fdecef, #fff4f0);
+}
+.hero h1 {
+  font-size: 3rem;
+  color: #d96c8b;
+  font-family: 'Playfair Display', serif;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+.hero .btn {
+  background-color: #d96c8b;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.hero .btn:hover {
+  background-color: #b85470;
+}
+
+/* Featured Menu */
+.featured-menu {
+  padding: 60px 20px;
+  text-align: center;
+}
+.featured-menu h2 {
+  font-size: 2.2rem;
+  color: #b85470;
+  margin-bottom: 40px;
+}
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.menu-card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+.menu-card:hover {
+  transform: translateY(-5px);
+}
+.menu-card img {
+  width: 100%;
+  border-radius: 15px;
+}
+.menu-card h3 {
+  margin-top: 15px;
+  color: #d96c8b;
+}
+.menu-card span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* About Section */
+.about {
+  background-color: #fff4f0;
+  padding: 60px 40px;
+  text-align: center;
+}
+.about h2 {
+  font-size: 2rem;
+  color: #b85470;
+  margin-bottom: 20px;
+}
+.about p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 60px 20px;
+  background-color: #fefefe;
+  text-align: center;
+}
+.testimonials h2 {
+  color: #b85470;
+  margin-bottom: 30px;
+}
+.carousel blockquote {
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  font-style: italic;
+  font-size: 1.1rem;
+  background-color: #fff9f8;
+  padding: 20px;
+  border-left: 4px solid #d96c8b;
+  border-radius: 10px;
+}
+.carousel cite {
+  display: block;
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* Newsletter */
+.newsletter {
+  background-color: #fdecef;
+  padding: 50px 20px;
+  text-align: center;
+}
+.newsletter h2 {
+  color: #b85470;
+}
+.newsletter form {
+  margin-top: 20px;
+}
+.newsletter input[type="email"] {
+  padding: 12px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+.newsletter button {
+  padding: 12px 25px;
+  background-color: #d96c8b;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.newsletter button:hover {
+  background-color: #b85470;
+}
+
+/* Footer */
+footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.9rem;
+  color: #777;
+}
+.contact-info p {
+  margin: 5px 0;
+}
+.socials a {
+  margin: 0 10px;
+  color: #d96c8b;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+.socials a:hover {
+  color: #b85470;
+}
